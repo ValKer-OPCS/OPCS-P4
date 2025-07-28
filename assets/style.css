@@ -1,5 +1,11 @@
+@charset "UTF-8";
 html {
   font-family: Roboto;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -54,6 +60,103 @@ nav {
   background-color: #EAEAEA;
   font-size: 16px;
   font-weight: 500;
+  max-width: 150px;
+}
+
+.main__title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  height: 287.5px;
+}
+.main__title__text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 39.5px;
+}
+.main__title__subtext {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.main__title__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  height: 50px;
+  width: 218px;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+}
+
+main section {
+  padding: 0px 20px;
+}
+
+.main__how-to__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main__how-to__list {
+  list-style: none;
+  padding-left: 0;
+  /* Cercle numéroté */
+}
+.main__how-to__list li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.main__how-to__list--marker {
+  background-color: #a259ff;
+  /* couleur violette */
+  color: white;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  margin-right: -12px;
+  /* superpose légèrement le bloc */
+  z-index: 1;
+}
+.main__how-to__list--content {
+  background-color: #f6f6f6;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 8px grey;
+  flex: 1;
+}
+.main__how-to .fa-store {
+  color: #9356DC;
+}
+
+.main__restaurant__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main__restaurant__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 main img {

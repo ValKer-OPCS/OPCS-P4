@@ -4,6 +4,7 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $background-geoloc: #EAEAEA;
+$background-title: #F6F6F6;
 $default-font: Roboto;
 $title-font: Shrikhand;
 
@@ -14,9 +15,22 @@ $title-font: Shrikhand;
     /* https://sasscolorcalculator.com/ */
 }
 
+@mixin linear-gradient {
+    background: linear-gradient(180deg, $secondary-color, $primary-color );
+}
+
+@mixin title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
 html {
     font-family: $default-font;
 
+}
+
+img {
+    object-fit: cover
 }
 
 body {
@@ -62,7 +76,8 @@ nav {
         gap: 17px;
         align-items: center;
         justify-content: center;
-        button{
+
+        button {
             border: none;
             background-color: $background-geoloc;
             font-size: 16px;
@@ -73,14 +88,124 @@ nav {
             background-color: $background-geoloc;
             font-size: 16px;
             font-weight: 500;
+            max-width: 150px;
         }
+    }
+}
+
+.main__title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-title;
+    height: 287.5px;
+
+
+    &__text {
+        @include title;
+        margin-top: 39.5px;
+    }
+
+    &__subtext {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        border-radius: 25px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        height: 50px;
+        width: 218px;
+        @include linear-gradient;
+
 
     }
 }
 
+main section {
+    padding: 0px 20px;
+}
 
+.main__how-to {
+
+    &__title {
+        @include title;
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Cercle numéroté */
+        &--marker {
+            background-color: #a259ff;
+            /* couleur violette */
+            color: white;
+            font-weight: bold;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            margin-right: -12px;
+            /* superpose légèrement le bloc */
+            z-index: 1;
+        }
+
+        &--content {
+            background-color: #f6f6f6;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 2px 8px grey;
+            flex: 1;
+        }
+    }
+
+    .fa-store {
+        color: $primary-color;
+    }
+}
+
+.main__restaurant {
+    &__title {
+        @include title;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        border: 1px solid black;
+        background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+}
 
 
 main img {
     display: none;
+
 }
