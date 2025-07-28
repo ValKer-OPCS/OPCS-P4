@@ -3,15 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" type="image/png" href="./favicon.png">
 </head>
@@ -19,10 +16,10 @@
 <body>
     <header>
         <nav>
-            <div>
-                <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
+            <div class="header__logo__container">
+                <img class="header__logo" src="assets/images/logo/ohmyfood.png" alt="Logo OhMyFood">
             </div>
-            <div>
+            <div class="form__container">
                 <form>
                     <button type="button" > <i class="fa-solid fa-location-dot"></i></button>
                     <input type="search" name="ville" placeholder="Paris, Belleville" required>
@@ -48,8 +45,7 @@
             <H2>Restaurants</H2>
             <a href="restaurants/restaurant-01-palette.html">
                 <article> <!-- Card 1 - La Palette du goût -->
-                    <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="Restaurant La palette du goût">
+                    <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
                     <div>
                         <p>Nouveau</p>
                     </div>
@@ -79,8 +75,7 @@
             </a>
             <a href="#">
                 <article> <!-- Card 3 - À la française -->
-                    <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt="Restaurant À la française">
+                    <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant À la française">
                     <div>
                         <p>Nouveau</p>
                     </div>
@@ -95,8 +90,7 @@
             </a>
             <a href="#">
                 <article> <!-- Card 4 - Le délice des sens -->
-                    <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="Restaurant Le délice des sens">
+                    <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant Le délice des sens">
                     <div>
                         <p>Nouveau</p>
                     </div>
