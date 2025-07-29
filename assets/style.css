@@ -152,6 +152,7 @@ main section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 66px;
 }
 .main__restaurant__title {
   font-size: 24px;
@@ -163,6 +164,7 @@ main section {
   border-radius: 15px;
   height: 250px;
   background-color: white;
+  /* Anim coeur */
 }
 .main__restaurant__card__bg {
   background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -249,6 +251,21 @@ main section {
   bottom: 33px;
   right: 25px;
   font-size: 22px;
+}
+.main__restaurant__card .heart-toggle {
+  display: none;
+}
+.main__restaurant__card .full-heart {
+  display: none;
+}
+.main__restaurant__card .heart-toggle:checked ~ .empty-heart {
+  display: none;
+}
+.main__restaurant__card .heart-toggle:checked ~ .full-heart {
+  display: flex;
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer__container {

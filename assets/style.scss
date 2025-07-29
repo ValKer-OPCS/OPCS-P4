@@ -18,6 +18,9 @@ $title-font: Shrikhand;
 @mixin linear-gradient {
     background: linear-gradient(180deg, $secondary-color, $primary-color );
 }
+@mixin linear-gradient-invert {
+    background: linear-gradient(0deg, $secondary-color, $primary-color );
+}
 
 @mixin title {
     font-size: 24px;
@@ -34,7 +37,7 @@ $title-font: Shrikhand;
     display: flex;
     justify-content: flex-end;
 }
-
+// CSS Start //
 html {
     font-family: $default-font;
 
@@ -206,6 +209,7 @@ main section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 66px ;
 
     &__title {
         @include title;
@@ -263,6 +267,8 @@ main section {
             padding: 16px 0px 0px 13px;
         }
 
+        
+
         &__title {
             font-size: 18px;
             font-weight: 700;
@@ -286,6 +292,25 @@ main section {
             right: 25px;
             font-size: 22px;
 
+        }
+        
+        .heart-toggle {
+            display: none;
+        }
+    /* Anim coeur */
+        .full-heart {
+            display: none;
+        }
+
+        .heart-toggle:checked ~ .empty-heart {
+            display: none;
+        }
+
+        .heart-toggle:checked ~ .full-heart {
+            display: flex;
+            @include linear-gradient-invert;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
