@@ -18,6 +18,7 @@ $title-font: Shrikhand;
 @mixin linear-gradient {
     background: linear-gradient(180deg, $secondary-color, $primary-color );
 }
+
 @mixin linear-gradient-invert {
     background: linear-gradient(0deg, $secondary-color, $primary-color );
 }
@@ -25,6 +26,7 @@ $title-font: Shrikhand;
 @mixin title {
     font-size: 24px;
     font-weight: 700;
+
 }
 
 @mixin basic-card {
@@ -37,6 +39,7 @@ $title-font: Shrikhand;
     display: flex;
     justify-content: flex-end;
 }
+
 // CSS Start //
 html {
     font-family: $default-font;
@@ -159,6 +162,7 @@ main section {
 
 .main__how-to {
 
+
     &__title {
         @include title;
     }
@@ -206,14 +210,18 @@ main section {
 }
 
 .main__restaurant {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 66px ;
+    padding: 55px 20px 66px 20px;
 
     &__title {
         @include title;
+        margin-top: 0;
 
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     &__card {
@@ -267,7 +275,7 @@ main section {
             padding: 16px 0px 0px 13px;
         }
 
-        
+
 
         &__title {
             font-size: 18px;
@@ -293,23 +301,25 @@ main section {
             font-size: 22px;
 
         }
-        
+
         .heart-toggle {
             display: none;
         }
-    /* Anim coeur */
+
+        /* Anim coeur */
         .full-heart {
             display: none;
         }
 
-        .heart-toggle:checked ~ .empty-heart {
+        .heart-toggle:checked~.empty-heart {
             display: none;
         }
 
-        .heart-toggle:checked ~ .full-heart {
+        .heart-toggle:checked~.full-heart {
             display: flex;
             @include linear-gradient-invert;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
@@ -350,6 +360,7 @@ main section {
             i {
                 font-size: 13px;
                 width: 11px;
+                align-self: center;
             }
 
             i+span {
@@ -357,5 +368,72 @@ main section {
             }
         }
 
+    }
+}
+
+@media (min-width: 1024px) {
+    .main__how-to {
+        padding-left: 180px;
+        padding-right: 180px;
+        height: 178px;
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 36.50px;
+
+            &--content {
+                height: 41px;
+            }
+        }
+
+        &__title {
+            margin: 50px 0px 25px 0px;
+            height: 31px;
+        }
+    }
+
+    .main__restaurant {
+        padding-left: 180px;
+        padding-right: 180px;
+
+
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            row-gap: 50px;
+
+        }
+
+        &__card {
+            max-width: 500px;
+
+            &__bg {
+                max-width: 500px;
+            }
+        }
+    }
+
+    .footer__container{
+        height: 54px;
+        padding: 30px 25px;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        &__title{
+            order: 2;
+            width: 138px;
+        }
+        &__list{
+            flex-direction: row;
+            &__item{
+                width: 130px;
+            }
+            &__item--spanned {
+                width: 190px;
+            }
+        }
     }
 }

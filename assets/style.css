@@ -149,14 +149,17 @@ main section {
 }
 
 .main__restaurant {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 66px;
+  padding: 55px 20px 66px 20px;
 }
 .main__restaurant__title {
   font-size: 24px;
   font-weight: 700;
+  margin-top: 0;
+}
+.main__restaurant__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .main__restaurant__card {
   display: flex;
@@ -265,6 +268,7 @@ main section {
   display: flex;
   background: linear-gradient(0deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -301,7 +305,64 @@ main section {
 .footer__container__list__item i {
   font-size: 13px;
   width: 11px;
+  align-self: center;
 }
 .footer__container__list__item i + span {
   font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .main__how-to {
+    padding-left: 180px;
+    padding-right: 180px;
+    height: 178px;
+  }
+  .main__how-to__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36.5px;
+  }
+  .main__how-to__list--content {
+    height: 41px;
+  }
+  .main__how-to__title {
+    margin: 50px 0px 25px 0px;
+    height: 31px;
+  }
+  .main__restaurant {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .main__restaurant__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    row-gap: 50px;
+  }
+  .main__restaurant__card {
+    max-width: 500px;
+  }
+  .main__restaurant__card__bg {
+    max-width: 500px;
+  }
+  .footer__container {
+    height: 54px;
+    padding: 30px 25px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .footer__container__title {
+    order: 2;
+    width: 138px;
+  }
+  .footer__container__list {
+    flex-direction: row;
+  }
+  .footer__container__list__item {
+    width: 130px;
+  }
+  .footer__container__list__item--spanned {
+    width: 190px;
+  }
 }/*# sourceMappingURL=style.css.map */
