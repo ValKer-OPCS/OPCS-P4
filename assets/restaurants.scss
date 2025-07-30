@@ -1,0 +1,143 @@
+// Variables Globales //
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-geoloc: #EAEAEA;
+$background: #F6F6F6;
+$default-font: Roboto;
+$title-font: Shrikhand;
+
+// Mixins //
+
+@mixin dark-green-card {
+    color: darken($tertiary-color, 47.84313725490196);
+    /* https://sasscolorcalculator.com/ */
+}
+
+@mixin linear-gradient {
+    background: linear-gradient(180deg, $secondary-color, $primary-color );
+}
+
+@mixin linear-gradient-invert {
+    background: linear-gradient(0deg, $secondary-color, $primary-color );
+}
+
+@mixin title {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+@mixin basic-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+// CSS Start //
+
+
+.header__logo__container a {
+    font-size: 16px;
+    top: 24px;
+    left: 24px;
+    position: absolute;
+
+}
+
+main section {
+    padding: 0;
+}
+
+.main__restaurant {
+
+    &__name {
+        position: relative;
+        overflow: hidden;
+
+        &__background {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 13px 0px 13px;
+            position: relative;
+            top: -32px;
+            border-radius: 32px;
+            background-color: white;
+
+        }
+
+        &__title {
+            font-size: 28px;
+            font-family: $title-font;
+            margin: 0;
+        }
+
+        &__heart {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 22px;
+            padding-right: 24px;
+
+        }
+
+        .heart-toggle {
+            display: none;
+        }
+
+        /* Anim coeur */
+        .full-heart {
+            display: none;
+        }
+
+        .heart-toggle:checked~.empty-heart {
+            display: none;
+        }
+
+        .heart-toggle:checked~.full-heart {
+            display: flex;
+            @include linear-gradient-invert;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    }
+}
+
+.main__menu {
+    padding: 0px 17px;
+
+    &__title {
+        color: #000;
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -9px;
+            width: 40px;
+            height: 3px;
+            background-color: $tertiary-color;
+        }
+    }
+
+
+}

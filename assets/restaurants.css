@@ -1,0 +1,80 @@
+.header__logo__container a {
+  font-size: 16px;
+  top: 24px;
+  left: 24px;
+  position: absolute;
+}
+
+main section {
+  padding: 0;
+}
+
+.main__restaurant__name {
+  position: relative;
+  overflow: hidden;
+  /* Anim coeur */
+}
+.main__restaurant__name__background {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__restaurant__name__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 13px 0px 13px;
+  position: relative;
+  top: -32px;
+  border-radius: 32px;
+  background-color: white;
+}
+.main__restaurant__name__title {
+  font-size: 28px;
+  font-family: Shrikhand;
+  margin: 0;
+}
+.main__restaurant__name__heart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 22px;
+  padding-right: 24px;
+}
+.main__restaurant__name .heart-toggle {
+  display: none;
+}
+.main__restaurant__name .full-heart {
+  display: none;
+}
+.main__restaurant__name .heart-toggle:checked ~ .empty-heart {
+  display: none;
+}
+.main__restaurant__name .heart-toggle:checked ~ .full-heart {
+  display: flex;
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__menu {
+  padding: 0px 17px;
+}
+.main__menu__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+}
+.main__menu__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}/*# sourceMappingURL=restaurants.css.map */
