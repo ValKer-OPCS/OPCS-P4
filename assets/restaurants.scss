@@ -51,6 +51,10 @@ $title-font: Shrikhand;
 
 }
 
+form {
+    background-color: $background;
+}
+
 main section {
     padding: 0;
 }
@@ -75,8 +79,9 @@ main section {
             padding: 32px 13px 0px 13px;
             position: relative;
             top: -32px;
-            border-radius: 32px;
-            background-color: white;
+            border-radius: 32px 32px 0px 0px;
+            background-color: $background;
+        
 
         }
 
@@ -121,6 +126,18 @@ main section {
 
 .main__menu {
     padding: 0px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 40px;
+        top: -32px;
+        position: relative;
+    }
 
     &__title {
         color: #000;
@@ -139,5 +156,74 @@ main section {
         }
     }
 
+    &__dish-card {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4.011px 15px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        height: 69px;
+        gap: 5px;
+        position: relative;
 
+        &__title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        &__subtitle {
+            margin: 0;
+        }
+
+        &__title__container {
+            margin: 13.5px 0px 0px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+
+        &__price {
+            position: absolute;
+            bottom: 18px;
+            right: 18px;
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+    &__order{
+        width: 186px;
+        height: 50px;
+        @include linear-gradient;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+
+
+}
+@media (min-width: 1024px){
+
+
+    .main__restaurant__name__container{
+        margin: 0px 180px;
+        width: auto;
+    }
+    .main__menu__container{
+        margin: 0px 180px;
+        width: auto;
+        top: -32px;
+        position: relative;
+    }
+    
 }

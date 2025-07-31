@@ -25,98 +25,114 @@
                 <img class="header__logo" src="../assets/images/logo/ohmyfood.png" alt="Logo OhMyFood">
                 <a href="../index.html"> <i class="fa-solid fa-arrow-left"></i></a>
             </div>
-            
+
         </nav>
     </header>
     <main>
         <section class="main__restaurant__name">
-            <img class="main__restaurant__name__background" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
+            <img class="main__restaurant__name__background"
+                src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="Restaurant La palette du goût">
             <div class="main__restaurant__name__container">
-            <H1 class="main__restaurant__name__title">La palette du goût</H1>
-            <label>
-                <input type="checkbox" class="heart-toggle">
-                <i class="fa-regular fa-heart empty-heart main__restaurant__name__heart"></i>
-                <i class="fa-solid fa-heart full-heart main__restaurant__name__heart"></i>
-            </label>
+                <H1 class="main__restaurant__name__title">La palette du goût</H1>
+                <label>
+                    <input type="checkbox" class="heart-toggle">
+                    <i class="fa-regular fa-heart empty-heart main__restaurant__name__heart"></i>
+                    <i class="fa-solid fa-heart full-heart main__restaurant__name__heart"></i>
+                </label>
             </div>
         </section>
-        <section class="main__menu" ><!-- Entrées -->
-            <H2 class="main__menu__title" >ENTRÉES</H2>
-            <article> <!-- Entrée 1 - Fricassé d'escargots -->
-                <H3>Fricassée d'escargots</H3>
-                <div>
-                    <p>Au piment d'Espelette</p>
-                    <p>25€</p>
-                </div>
-            </article>
-            <article> <!-- Entrée 2 - Foie gras de canard mi-cuit -->
-                <H3>Foie gras de canard mi-cuit</H3>
-                <div>
-                    <p>Et ses copeaux de truffe noire</p>
-                    <p>35€</p>
-                </div>
-            </article>
-            <article> <!-- Entrée 3 - Œuf au plat -->
-                <H3>Œuf au plat</H3>
-                <div>
-                    <p>Assaisonné à la truffe sur lit de caviar</p>
-                    <p>20€</p>
-                </div>
-            </article>
-        </section>
-        <section class="main__menu"><!-- Plats -->
-            <H2 class="main__menu__title">PLATS</H2>
-            <article> <!-- Plat 1 - Filet de bœuf aux herbes -->
-                <H3>Filet de bœuf aux herbes</H3>
-                <div>
-                    <p>Accompagné de sa ribambelle de légumes</p>
-                    <p>40€</p>
-                </div>
-            </article>
-            <article> <!-- Plat 2 - Parmentier de queue de bœuf -->
-                <H3>Parmentier de queue de bœuf</H3>
-                <div>
-                    <p>À la truffe noire sur sa purée de panais</p>
-                    <p>44€</p>
-                </div>
-            </article>
-            <article> <!-- Plat 3 - Filet de turbot -->
-                <H3>Filet de turbot</H3>
-                <div>
-                    <p>Aux agrumes</p>
-                    <p>44€</p>
-                </div>
-            </article>
-        </section>
-        <section class="main__menu"><!-- Desserts -->
-            <H2 class="main__menu__title">DESSERTS</H2>
-            <article> <!-- Dessert 1 - Paris-Brest -->
-                <H3>Paris-Brest</H3>
-                <div>
-                    <p>Revisité</p>
-                    <p>18€</p>
-                </div>
-            </article>
-            <article> <!-- Dessert 2 - Macaron au chocolat d'exception  -->
-                <H3>Macaron au chocolat d'exception </H3>
-                <div>
-                    <p>Et glace à la vanille de Madagascar</p>
-                    <p>22€</p>
-                </div>
-            </article>
-            <article> <!-- Dessert 3 - Mousse au chocolat  -->
-                <H3>Mousse au chocolat </H3>
-                <div>
-                    <p>Au piment d'Espelette et à la truffe noire</p>
-                    <p>23€</p>
-                </div>
-            </article>
-        </section>
+        <form class="main__menu__container">
+            <section class="main__menu">
+                <H2 class="main__menu__title">ENTRÉES</H2> <!-- Entrées -->
+                <label class="main__menu__dish-card"> <!-- Entrée 1 - Fricassé d'escargots -->
+                    <input type="checkbox" name="R01" value="E01" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Fricassée d'escargots</span>
+                        <span class="main__menu__dish-card__subtitle">Au piment d'Espelette </span>
+                    </span>
+                    <span class="main__menu__dish-card__price">25€</span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Entrée 2 - Foie gras de canard mi-cuit -->
+                    <input type="checkbox" name="R01" value="E02" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Foie gras de canard mi-cuit</span>
+                        <span class="main__menu__dish-card__subtitle">Et ses copeaux de truffe noire</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">35€</span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Entrée 3 - Œuf au plat -->
+                    <input type="checkbox" name="R01" value="E03" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Œuf au plat</span>
+                        <span class="main__menu__dish-card__subtitle">Assaisonné à la truffe sur lit de caviar</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">20€</span>
+                </label>
+            </section>
+            <section class="main__menu">
+                <H2 class="main__menu__title">PLATS</H2><!-- Plats -->
+                <label class="main__menu__dish-card"> <!-- Plat 1 - Filet de bœuf aux herbes -->
+                    <input type="checkbox" name="R01" value="P01" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Filet de bœuf aux herbes</span>
+                        <span class="main__menu__dish-card__subtitle">Accompagné de sa ribambelle de légumes </span>
+                    </span>
+                    <span class="main__menu__dish-card__price">40€</span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Plat 2 - Parmentier de queue de bœuf -->
+                    <input type="checkbox" name="R01" value="P02" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Parmentier de queue de bœuf</span>
+                        <span class="main__menu__dish-card__subtitle">À la truffe noire sur sa purée de panais</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">44€</span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Plat 3 - Filet de turbot -->
+                    <input type="checkbox" name="R01" value="P03" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Filet de turbot</span>
+                        <span class="main__menu__dish-card__subtitle">Aux agrumes</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">44€</span>
+                </label>
+            </section>
+            <section class="main__menu">
+                <H2 class="main__menu__title">DESSERTS</H2><!-- Desserts -->
+                <label class="main__menu__dish-card"> <!-- Dessert 1 - Paris-Brest -->
+                    <input type="checkbox" name="R01" value="D01" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Paris-Brest</span>
+                        <span class="main__menu__dish-card__subtitle">Revisité </span>
+                    </span>
+                    <span class="main__menu__dish-card__price">18€</span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Dessert 2 - Macaron au chocolat d'exception  -->
+                    <input type="checkbox" name="R01" value="D02" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Macaron au chocolat d'exception</span>
+                        <span class="main__menu__dish-card__subtitle">Et glace à la vanille de Madagascar</span></span>
+                        <span class="main__menu__dish-card__price">22€</span></label>
+                
+                <label class="main__menu__dish-card" > <!-- Dessert 3 - Mousse au chocolat  -->  
+                    <input type="checkbox" name="R01" value="D03" hidden>                  
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Mousse au chocolat</span>
+                        <span class="main__menu__dish-card__subtitle">Au piment d'Espelette et à la truffe noire</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">23€</span>
+                </label>
+                
+            </section>
+            
+            <input class="main__menu__order" type="submit" value="Commander">
+        </form>
+
 
     </main>
     <footer class="footer__container">
-        <H4 class="footer__container__title">ohmyfood</H4>
-        <UL class="footer__container__list">
+        <p class="footer__container__title">ohmyfood</p>
+        <ul class="footer__container__list">
             <li><a class="footer__container__list__item footer__container__list__item--spanned" href="#"><i
                         class="fa-solid fa-utensils"></i><span>Proposer un
                         restaurant</span></a></li>
@@ -124,7 +140,7 @@
                         class="fa-solid fa-handshake-angle"></i><span>Devenir partenaire</span></a></li>
             <li><a class="footer__container__list__item" href="#">Mentions légales</a></li>
             <li><a class="footer__container__list__item" href="mailto:contact@ohmyfood.fr">Contact</a></li>
-        </UL>
+        </ul>
     </footer>
 
 </body>
