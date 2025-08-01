@@ -161,10 +161,13 @@ main section {
 }
 
 .main__how-to {
+    height: 440px;
 
 
     &__title {
         @include title;
+        margin-top: 0px;
+        padding-top: 48px;
     }
 
     &__list {
@@ -201,6 +204,7 @@ main section {
             gap: 1rem;
             box-shadow: 0 2px 8px grey;
             flex: 1;
+            height: 40.38px;
         }
     }
 

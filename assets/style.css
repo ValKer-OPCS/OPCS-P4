@@ -107,9 +107,14 @@ main section {
   padding: 0px 20px;
 }
 
+.main__how-to {
+  height: 440px;
+}
 .main__how-to__title {
   font-size: 24px;
   font-weight: 700;
+  margin-top: 0px;
+  padding-top: 48px;
 }
 .main__how-to__list {
   list-style: none;
@@ -143,6 +148,7 @@ main section {
   gap: 1rem;
   box-shadow: 0 2px 8px grey;
   flex: 1;
+  height: 40.38px;
 }
 .main__how-to .fa-store {
   color: #9356DC;

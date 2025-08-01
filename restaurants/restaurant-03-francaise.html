@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyFood! - À la française</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/restaurants.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header__logo__container">
+                <img class="header__logo" src="../assets/images/logo/ohmyfood.png" alt="Logo OhMyFood">
+                <a href="../index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="main__restaurant__name">
+            <img class="main__restaurant__name__background"
+                src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Restaurant La palette du goût">
+            <div class="main__restaurant__name__container">
+                <H1 class="main__restaurant__name__title">À la française</H1>
+                <label>
+                    <input type="checkbox" class="heart-toggle">
+                    <i class="fa-regular fa-heart empty-heart main__restaurant__name__heart"></i>
+                    <i class="fa-solid fa-heart full-heart main__restaurant__name__heart"></i>
+                </label>
+            </div>
+        </section>
+        <form class="main__menu__container">
+            <section class="main__menu">
+                <H2 class="main__menu__title">ENTRÉES</H2> <!-- Entrées -->
+                <label class="main__menu__dish-card"> <!-- Entrée 1 - Tartare de poulpe acidulé -->
+                    <input type="checkbox" name="R03" value="E01" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Tartare de poulpe acidulé</span>
+                        <span class="main__menu__dish-card__subtitle">Aux zestes d'orange</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">25€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Entrée 2 - Velouté de légumes d'antan -->
+                    <input type="checkbox" name="R03" value="E02" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Velouté de légumes d'antan</span>
+                        <span class="main__menu__dish-card__subtitle">Carotte, panais, topinambour</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">35€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Entrée 3 - Soupe à l'oignon -->
+                    <input type="checkbox" name="R03" value="E03" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Soupe à l'oignon</span>
+                        <span class="main__menu__dish-card__subtitle">Revisitée</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">20€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+            </section>
+            <section class="main__menu">
+                <H2 class="main__menu__title">PLATS</H2><!-- Plats -->
+                <label class="main__menu__dish-card"> <!-- Plat 1 - Coquilles Saint-Jacques  -->
+                    <input type="checkbox" name="R03" value="P01" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Coquilles Saint-Jacques </span>
+                        <span class="main__menu__dish-card__subtitle">Accompagnées d'une purée de panais </span>
+                    </span>
+                    <span class="main__menu__dish-card__price">40€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Plat 2 - Magret de canard -->
+                    <input type="checkbox" name="R03" value="P02" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Magret de canard</span>
+                        <span class="main__menu__dish-card__subtitle">Et parmentier de pommes de terre</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">35€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Plat 3 - Pigeonneau d’Ille-et-Vilaine  -->
+                    <input type="checkbox" name="R03" value="P03" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Pigeonneau d’Ille-et-Vilaine </span>
+                        <span class="main__menu__dish-card__subtitle">Sur son lit de gnocchis aux légumes</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">44€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+            </section>
+            <section class="main__menu">
+                <H2 class="main__menu__title">DESSERTS</H2><!-- Desserts -->
+                <label class="main__menu__dish-card"> <!-- Dessert 1 - Pétales de violettes glacés -->
+                    <input type="checkbox" name="R03" value="D01" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Pétales de violettes glacés</span>
+                        <span class="main__menu__dish-card__subtitle">Et purée de noisettes</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">18€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+                <label class="main__menu__dish-card"> <!-- Dessert 2 - Fondant au chocolat  -->
+                    <input type="checkbox" name="R03" value="D02" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Fondant au chocolat</span>
+                        <span class="main__menu__dish-card__subtitle">Revisitée</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">22€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span></label>
+
+                <label class="main__menu__dish-card"> <!-- Dessert 3 - Millefeuille croustillant  -->
+                    <input type="checkbox" name="R03" value="D03" class="card-toggle" hidden>
+                    <span class="main__menu__dish-card__title__container">
+                        <span class="main__menu__dish-card__title">Millefeuille croustillant</span>
+                        <span class="main__menu__dish-card__subtitle">Myrtilles et pâte d’amande</span>
+                    </span>
+                    <span class="main__menu__dish-card__price">23€</span>
+                    <span class="validation-box">
+                        <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
+                    </span>
+                </label>
+
+            </section>
+
+            <input class="main__menu__order" type="submit" value="Commander">
+        </form>
+
+
+    </main>
+    <footer class="footer__container">
+        <p class="footer__container__title">ohmyfood</p>
+        <ul class="footer__container__list">
+            <li><a class="footer__container__list__item footer__container__list__item--spanned" href="#"><i
+                        class="fa-solid fa-utensils"></i><span>Proposer un
+                        restaurant</span></a></li>
+            <li><a class="footer__container__list__item footer__container__list__item--spanned" href="#"><i
+                        class="fa-solid fa-handshake-angle"></i><span>Devenir partenaire</span></a></li>
+            <li><a class="footer__container__list__item" href="#">Mentions légales</a></li>
+            <li><a class="footer__container__list__item" href="mailto:contact@ohmyfood.fr">Contact</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

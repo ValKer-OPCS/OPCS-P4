@@ -39,6 +39,7 @@ main section {
   font-size: 28px;
   font-family: Shrikhand;
   margin: 0;
+  font-weight: 400;
 }
 .main__restaurant__name__heart {
   display: flex;
@@ -69,12 +70,12 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 9px;
 }
 .main__menu__container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 38.5px;
   padding-bottom: 40px;
   top: -32px;
   position: relative;
