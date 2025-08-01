@@ -287,4 +287,15 @@ main section {
         position: relative;
     }
 
+    .main__restaurant {
+
+        &__name {
+
+
+            &__container {
+                justify-content: center;
+                gap: 24px;
+            }
+        }
+    }
 }

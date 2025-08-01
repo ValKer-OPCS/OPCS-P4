@@ -200,4 +200,8 @@ main section {
     top: -32px;
     position: relative;
   }
+  .main__restaurant__name__container {
+    justify-content: center;
+    gap: 24px;
+  }
 }/*# sourceMappingURL=restaurants.css.map */
