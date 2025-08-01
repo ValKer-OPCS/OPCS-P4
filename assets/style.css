@@ -149,6 +149,8 @@ main section {
   box-shadow: 0 2px 8px grey;
   flex: 1;
   height: 40.38px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .main__how-to .fa-store {
   color: #9356DC;
@@ -321,7 +323,7 @@ main section {
   .main__how-to {
     padding-left: 180px;
     padding-right: 180px;
-    height: 178px;
+    height: 228.38px;
   }
   .main__how-to__list {
     display: grid;
@@ -332,8 +334,9 @@ main section {
     height: 41px;
   }
   .main__how-to__title {
-    margin: 50px 0px 25px 0px;
+    margin: 0px 0px 25px 0px;
     height: 31px;
+    padding-top: 50px;
   }
   .main__restaurant {
     padding-left: 180px;

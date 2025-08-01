@@ -205,6 +205,8 @@ main section {
             box-shadow: 0 2px 8px grey;
             flex: 1;
             height: 40.38px;
+            font-size: 16px;
+            font-weight: 500;
         }
     }
 
@@ -379,7 +381,7 @@ main section {
     .main__how-to {
         padding-left: 180px;
         padding-right: 180px;
-        height: 178px;
+        height: 228.38px;
 
         &__list {
             display: grid;
@@ -388,12 +390,14 @@ main section {
 
             &--content {
                 height: 41px;
+
             }
         }
 
         &__title {
-            margin: 50px 0px 25px 0px;
+            margin: 0px 0px 25px 0px;
             height: 31px;
+            padding-top: 50px;
         }
     }
 
@@ -420,21 +424,25 @@ main section {
         }
     }
 
-    .footer__container{
+    .footer__container {
         height: 54px;
         padding: 30px 25px;
         flex-direction: row;
         align-items: flex-end;
         justify-content: flex-end;
-        &__title{
+
+        &__title {
             order: 2;
             width: 138px;
         }
-        &__list{
+
+        &__list {
             flex-direction: row;
-            &__item{
+
+            &__item {
                 width: 130px;
             }
+
             &__item--spanned {
                 width: 190px;
             }
