@@ -104,6 +104,7 @@ main section {
   height: 69px;
   gap: 5px;
   position: relative;
+  overflow: hidden;
 }
 .main__menu__dish-card__title {
   margin: 0;
@@ -126,6 +127,33 @@ main section {
   margin: 0;
   font-weight: 700;
 }
+.main__menu__dish-card .validation-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 59px;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+.main__menu__dish-card .checkmark {
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+.main__menu__dish-card .card-toggle:checked ~ .validation-box {
+  transform: translateX(0);
+}
+.main__menu__dish-card .card-toggle:checked ~ .validation-box .checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
 .main__menu__order {
   width: 186px;
   height: 50px;
@@ -143,13 +171,30 @@ main section {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
+.footer__container {
+  margin-top: -32px;
+}
+
+.main__menu__dish-card__price {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  margin: 0;
+  font-weight: 700;
+  transition: right 0.4s ease;
+}
+
+.card-toggle:checked ~ .main__menu__dish-card__price {
+  right: 77px;
+}
+
 @media (min-width: 1024px) {
   .main__restaurant__name__container {
-    margin: 0px 180px;
+    margin: 0px 193px;
     width: auto;
   }
   .main__menu__container {
-    margin: 0px 180px;
+    margin: 0px 193px;
     width: auto;
     top: -32px;
     position: relative;
