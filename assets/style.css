@@ -348,12 +348,6 @@ main section {
     gap: 100px;
     row-gap: 50px;
   }
-  .main__restaurant__card {
-    max-width: 500px;
-  }
-  .main__restaurant__card__bg {
-    max-width: 500px;
-  }
   .footer__container {
     height: 54px;
     padding: 30px 25px;
