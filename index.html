@@ -13,11 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/index.css">
     <link rel="icon" type="image/png" href="./favicon.png">
 </head>
 
 <body>
+    <!-- <div class="loader">
+        <div class="spinner"></div>
+    </div> -->
+    <div class="loader" >
+    <div class="logo">
+    <span>o</span>
+    <span>h</span>
+    <span>m</span>
+    <span>y</span>
+    <span>f</span>
+    <span>o</span>
+    <span>o</span>
+    <span>d</span>
+  </div>
+  </div>
     <header>
         <nav>
             <div class="header__logo__container">
@@ -35,7 +50,7 @@
         <section class="main__title">
             <H1 class="main__title__text">Réservez le menu qui vous convient</H1>
             <P class="main__title__subtext">Découvrez des restaurants d'exception, sélectionnés par nos soins.</P>
-            <a href="#restaurants-list" class="main__title__button">Explorer nos restaurants</a>
+            <a href="#restaurants-list" class="components-button">Explorer nos restaurants</a>
         </section>
         <section class="main__how-to">
             <H2 class="main__how-to__title">Fonctionnement</H2>
@@ -76,11 +91,10 @@
                             <p class="main__restaurant__card__subtitle">Ménilmontant</p>
                         </div>
                     </a>
-                    <label>
-                        <input type="checkbox" class="heart-toggle">
-                        <i class="fa-regular fa-heart empty-heart main__restaurant__card__heart"></i>
-                        <i class="fa-solid fa-heart full-heart main__restaurant__card__heart"></i>
-                    </label>
+                    <div class="animations__heart">
+                        <i class="far fa-heart empty-heart"></i> <!-- cœur vide -->
+                        <i class="fas fa-heart full-heart"></i> <!-- cœur plein -->
+                    </div>
                 </article>
                 <article class="main__restaurant__card"> <!-- Card 2 - La note enchantée -->
                     <a href="restaurants/restaurant-02-note.html">
@@ -92,11 +106,10 @@
                             <p class="main__restaurant__card__subtitle">Charonne</p>
                         </div>
                     </a>
-                    <label>
-                        <input type="checkbox" class="heart-toggle">
-                        <i class="fa-regular fa-heart empty-heart main__restaurant__card__heart"></i>
-                        <i class="fa-solid fa-heart full-heart main__restaurant__card__heart"></i>
-                    </label>
+                    <div class="animations__heart">
+                        <i class="far fa-heart empty-heart"></i> <!-- cœur vide -->
+                        <i class="fas fa-heart full-heart"></i> <!-- cœur plein -->
+                    </div>
                 </article>
                 <article class="main__restaurant__card"> <!-- Card 3 - À la française -->
                     <a href="restaurants/restaurant-03-francaise.html">
@@ -107,11 +120,10 @@
                             <p class="main__restaurant__card__subtitle">Cité Rouge</p>
                         </div>
                     </a>
-                    <label>
-                        <input type="checkbox" class="heart-toggle">
-                        <i class="fa-regular fa-heart empty-heart main__restaurant__card__heart"></i>
-                        <i class="fa-solid fa-heart full-heart main__restaurant__card__heart"></i>
-                    </label>
+                    <div class="animations__heart">
+                        <i class="far fa-heart empty-heart"></i> <!-- cœur vide -->
+                        <i class="fas fa-heart full-heart"></i> <!-- cœur plein -->
+                    </div>
                 </article>
                 <article class="main__restaurant__card"> <!-- Card 4 - Le délice des sens -->
                     <a href="restaurants/restaurant-04-delice.html">
@@ -122,11 +134,10 @@
                             <p class="main__restaurant__card__subtitle">Folie-Méricourt</p>
                         </div>
                     </a>
-                    <label>
-                        <input type="checkbox" class="heart-toggle">
-                        <i class="fa-regular fa-heart empty-heart main__restaurant__card__heart"></i>
-                        <i class="fa-solid fa-heart full-heart main__restaurant__card__heart"></i>
-                    </label>
+                    <div class="animations__heart">
+                        <i class="far fa-heart empty-heart"></i> <!-- cœur vide -->
+                        <i class="fas fa-heart full-heart"></i> <!-- cœur plein -->
+                    </div>
                 </article>
             </div>
         </section>

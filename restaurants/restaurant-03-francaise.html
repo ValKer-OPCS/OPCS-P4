@@ -35,17 +35,16 @@
                 alt="Restaurant La palette du goût">
             <div class="main__restaurant__name__container">
                 <H1 class="main__restaurant__name__title">À la française</H1>
-                <label>
-                    <input type="checkbox" class="heart-toggle">
-                    <i class="fa-regular fa-heart empty-heart main__restaurant__name__heart"></i>
-                    <i class="fa-solid fa-heart full-heart main__restaurant__name__heart"></i>
-                </label>
+                <div id="restaurant__heart" class="animations__heart">
+                    <i class="far fa-heart empty-heart"></i>
+                    <i class="fas fa-heart full-heart"></i>
+                </div>
             </div>
         </section>
         <form class="main__menu__container">
             <section class="main__menu">
                 <H2 class="main__menu__title">ENTRÉES</H2> <!-- Entrées -->
-                <label class="main__menu__dish-card"> <!-- Entrée 1 - Tartare de poulpe acidulé -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Entrée 1 - Tartare de poulpe acidulé -->
                     <input type="checkbox" name="R03" value="E01" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Tartare de poulpe acidulé</span>
@@ -56,7 +55,7 @@
                         <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
                     </span>
                 </label>
-                <label class="main__menu__dish-card"> <!-- Entrée 2 - Velouté de légumes d'antan -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Entrée 2 - Velouté de légumes d'antan -->
                     <input type="checkbox" name="R03" value="E02" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Velouté de légumes d'antan</span>
@@ -67,7 +66,7 @@
                         <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
                     </span>
                 </label>
-                <label class="main__menu__dish-card"> <!-- Entrée 3 - Soupe à l'oignon -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Entrée 3 - Soupe à l'oignon -->
                     <input type="checkbox" name="R03" value="E03" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Soupe à l'oignon</span>
@@ -81,7 +80,7 @@
             </section>
             <section class="main__menu">
                 <H2 class="main__menu__title">PLATS</H2><!-- Plats -->
-                <label class="main__menu__dish-card"> <!-- Plat 1 - Coquilles Saint-Jacques  -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Plat 1 - Coquilles Saint-Jacques  -->
                     <input type="checkbox" name="R03" value="P01" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Coquilles Saint-Jacques </span>
@@ -92,7 +91,7 @@
                         <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
                     </span>
                 </label>
-                <label class="main__menu__dish-card"> <!-- Plat 2 - Magret de canard -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Plat 2 - Magret de canard -->
                     <input type="checkbox" name="R03" value="P02" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Magret de canard</span>
@@ -103,7 +102,7 @@
                         <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
                     </span>
                 </label>
-                <label class="main__menu__dish-card"> <!-- Plat 3 - Pigeonneau d’Ille-et-Vilaine  -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Plat 3 - Pigeonneau d’Ille-et-Vilaine  -->
                     <input type="checkbox" name="R03" value="P03" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Pigeonneau d’Ille-et-Vilaine </span>
@@ -117,7 +116,7 @@
             </section>
             <section class="main__menu">
                 <H2 class="main__menu__title">DESSERTS</H2><!-- Desserts -->
-                <label class="main__menu__dish-card"> <!-- Dessert 1 - Pétales de violettes glacés -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Dessert 1 - Pétales de violettes glacés -->
                     <input type="checkbox" name="R03" value="D01" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Pétales de violettes glacés</span>
@@ -128,7 +127,7 @@
                         <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
                     </span>
                 </label>
-                <label class="main__menu__dish-card"> <!-- Dessert 2 - Fondant au chocolat  -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Dessert 2 - Fondant au chocolat  -->
                     <input type="checkbox" name="R03" value="D02" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Fondant au chocolat</span>
@@ -137,9 +136,10 @@
                     <span class="main__menu__dish-card__price">22€</span>
                     <span class="validation-box">
                         <span class="checkmark"><i class="fa-solid fa-circle-check"></i></span>
-                    </span></label>
+                    </span>
+                </label>
 
-                <label class="main__menu__dish-card"> <!-- Dessert 3 - Millefeuille croustillant  -->
+                <label class="main__menu__dish-card  card--fade-in"> <!-- Dessert 3 - Millefeuille croustillant  -->
                     <input type="checkbox" name="R03" value="D03" class="card-toggle" hidden>
                     <span class="main__menu__dish-card__title__container">
                         <span class="main__menu__dish-card__title">Millefeuille croustillant</span>
@@ -153,7 +153,7 @@
 
             </section>
 
-            <input class="main__menu__order" type="submit" value="Commander">
+            <input class="components-button components-button--order" type="submit" value="Commander">
         </form>
 
 

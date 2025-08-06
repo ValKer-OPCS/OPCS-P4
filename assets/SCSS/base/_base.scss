@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+
+
+html {
+    font-family: $default-font;
+
+}
+
+img {
+    object-fit: cover
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}

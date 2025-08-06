@@ -1,0 +1,39 @@
+@use "sass:color";
+@use 'colors' as *;
+
+@mixin dark-green-card {
+    color: color.adjust($tertiary-color, $lightness: -47.8431372549%);
+    /* https://sasscolorcalculator.com/ */
+}
+
+@mixin linear-gradient {
+    background: linear-gradient(180deg, $secondary-color, $primary-color );
+}
+
+@mixin linear-gradient-light {
+    background: linear-gradient(180deg, color.scale($secondary-color, $lightness: 10%), color.scale($primary-color, $lightness: 10%));
+}
+
+@mixin title {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+@mixin basic-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 175px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin ellipsis($max-width: 100%) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: $max-width;
+}

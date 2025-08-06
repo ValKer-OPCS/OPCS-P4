@@ -1,0 +1,81 @@
+@use '../../abstracts/' as *;
+
+.main__how-to {
+    height: 440px;
+
+
+    &__title {
+        @include title;
+        margin-top: 0px;
+        padding-top: 48px;
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        &--marker {
+            background-color: $primary-color;
+            color: white;
+            font-weight: bold;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            margin-right: -12px;
+            z-index: 1;
+        }
+
+        &--content {
+            background-color: $background;
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 2px 8px $box-shadow;
+            flex: 1;
+            height: 40.38px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    .fa-store {
+        color: $primary-color;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main__how-to {
+        padding-left: 180px;
+        padding-right: 180px;
+        height: 228.38px;
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 36.50px;
+
+            &--content {
+                height: 41px;
+
+            }
+        }
+
+        &__title {
+            margin: 0px 0px 25px 0px;
+            height: 31px;
+            padding-top: 50px;
+        }
+    }
+}

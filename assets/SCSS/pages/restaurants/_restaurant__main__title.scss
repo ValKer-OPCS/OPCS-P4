@@ -1,0 +1,46 @@
+@use '../../abstracts/' as *;
+
+main section {
+    padding: 0;
+}
+
+.main__restaurant {
+
+    &__name {
+        position: relative;
+        overflow: hidden;
+
+        &__background {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 13px 0px 13px;
+            position: relative;
+            top: -32px;
+            border-radius: 32px 32px 0px 0px;
+            background-color: $background;
+
+
+        }
+
+        &__title {
+            font-size: 28px;
+            font-family: $title-font;
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .main__restaurant__name__container {
+        margin: 0px 193px;
+        width: auto;
+    }
+}
