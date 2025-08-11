@@ -1,0 +1,119 @@
+@use '../abstracts/' as *;
+
+main section {
+    padding: 0;
+}
+
+.main__restaurant {
+
+    &__name {
+        position: relative;
+        overflow: hidden;
+
+        &__background {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px 13px 0px 13px;
+            position: relative;
+            top: -32px;
+            border-radius: 32px 32px 0px 0px;
+            background-color: $background;
+
+
+        }
+
+        &__title {
+            font-size: 28px;
+            font-family: $title-font;
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+}
+
+.main__menu {
+    padding: 0px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 38.5px;
+        padding-bottom: 40px;
+        top: -32px;
+        position: relative;
+        background-color: $background;
+    }
+
+    &__title {
+        color: #000;
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -9px;
+            width: 40px;
+            height: 3px;
+            background-color: $tertiary-color;
+        }
+    }
+}
+
+.button {
+    width: 186px;
+    height: 50px;
+    align-self: center;
+    justify-self: center;
+    border: none;
+
+}
+
+@media (min-width: 1024px) {
+    .main__menu__container {
+        margin: 0px 193px;
+        width: auto;
+        top: -32px;
+        position: relative;
+    }
+
+    .main__restaurant {
+
+        &__name {
+
+
+            &__container {
+                justify-content: center;
+                gap: 48px;
+            }
+        }
+    }
+
+    .main__restaurant__name__container {
+        margin: 0px 193px;
+        width: auto;
+    }
+
+}
+
+.fav-heart {
+    padding-right: 24px;
+    bottom: 0px;
+    right: 0px;
+}
