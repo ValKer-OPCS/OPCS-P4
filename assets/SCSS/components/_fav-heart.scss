@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+
+@keyframes heartFill {
+    from {
+        background-position: 0 100%;
+    }
+
+    to {
+        background-position: 0 0%;
+    }
+}
+
+
+.fav-heart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+
+    .empty-heart,
+    .full-heart {
+        position: absolute;
+        transition: opacity 0.3s ease;
+    }
+
+    .full-heart {
+        opacity: 0;
+        background: linear-gradient(to top, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover .empty-heart {
+        opacity: 0;
+    }
+
+    &:hover .full-heart {
+        opacity: 1;
+        animation: heartFill 0.8s ease forwards;
+    }
+}
