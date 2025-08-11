@@ -1,0 +1,124 @@
+@use '../abstracts/' as *;
+
+.card-menu {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4.011px 15px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 69px;
+  gap: 5px;
+  position: relative;
+  overflow: hidden;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    @include ellipsis(100%);
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 15px;
+   @include ellipsis(100%);
+  }
+
+  &__title__container {
+    margin: 13.5px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 70px;
+    transition: margin-right 0.4s ease;
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    margin: 0;
+    font-weight: 700;
+   @include ellipsis(100%);
+    transition: right 0.4s ease;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card--fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.card--fade-in:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.card--fade-in:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.card--fade-in:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.card--fade-in:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.card--fade-in:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.validation-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 59px;
+  height: 100%;
+  background-color: $tertiary-color;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+
+.checkmark {
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.card-menu:hover {
+  .validation-box {
+    transform: translateX(0);
+  }
+
+  .validation-box .checkmark {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .card-menu__price {
+    right: 77px;
+  }
+
+  .card-menu__title__container {
+    margin-right: 130px;
+  }
+}
