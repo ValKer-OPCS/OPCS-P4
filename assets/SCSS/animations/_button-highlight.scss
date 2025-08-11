@@ -1,5 +1,0 @@
-@use '../abstracts/' as *;
-.components-button:hover {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.50);
-    @include linear-gradient-light;
-}   
