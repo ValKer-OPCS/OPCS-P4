@@ -62,7 +62,7 @@
   animation: fadeInUp $card-menu--fade-in-duration ease forwards;
 
   // Génération auto des délais
-  @for $i from 1 through 5 {
+  @for $i from 1 through $card-menu--max-card-nb {
     &:nth-child(#{$i}) {
       animation-delay: $i * $card-menu--fade-delay-step;
     }
