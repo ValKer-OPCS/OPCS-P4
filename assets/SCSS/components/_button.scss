@@ -7,11 +7,10 @@
     font-weight: 500;
     color: white;
     border-radius: 25px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);    
     @include linear-gradient;
-
 }
+
 .button:hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.50);
     @include linear-gradient-light;
