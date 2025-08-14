@@ -54,7 +54,7 @@
       animation: fadeIn $loader-logo--fade-in-duration forwards;
 
       // Génère les délais automatiquement
-      @for $i from 1 through 8 {
+      @for $i from 1 through $loader-logo--max-letter-nb {
         &:nth-child(#{$i}) {
           animation-delay: ($i - 1) * $loader-logo--letter-delay-step;
         }
