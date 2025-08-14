@@ -17,15 +17,12 @@
         }
     }
 
-
-
     &__title__container {
         display: flex;
         flex-direction: column;
         gap: 5px;
         padding: 16px 0px 0px 13px;
     }
-
 
     &__title {
         font-size: 18px;
@@ -40,6 +37,4 @@
         font-weight: 300;
         margin: 0;
     }
-
-
 }
