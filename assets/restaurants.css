@@ -290,9 +290,6 @@ nav {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
-.loader .logo span:nth-child(1) {
-  animation-delay: 0s;
-}
 .loader .logo span:nth-child(2) {
   animation-delay: 0.2s;
 }
@@ -378,9 +375,6 @@ nav {
 .card--fade-in {
   opacity: 0;
   animation: fadeInUp 0.6s ease forwards;
-}
-.card--fade-in:nth-child(1) {
-  animation-delay: 0.2s;
 }
 .card--fade-in:nth-child(2) {
   animation-delay: 0.4s;
