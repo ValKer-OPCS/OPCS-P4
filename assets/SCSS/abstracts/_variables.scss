@@ -1,9 +1,11 @@
 // Variables pour components/_card-menu
 $card-menu--fade-in-duration: 0.6s;
 $card-menu--fade-delay-step: 0.2s;
+$card-menu--max-card-nb: 5;
 
 
 // Variables pour components/_loader-logo
 $loader-logo--fade-in-duration: 0.5s;
 $loader-logo--fade-out-duration: 3s;
 $loader-logo--letter-delay-step: 0.2s;
+$loader-logo--max-letter-nb: 8;
