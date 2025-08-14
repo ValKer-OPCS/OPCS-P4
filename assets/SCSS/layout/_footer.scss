@@ -29,7 +29,7 @@
             display: flex;
             flex-direction: row;
             gap: 10px;
-            color: white;
+            color: inherit;
             font-weight: 400;
 
             i {
@@ -38,15 +38,16 @@
                 align-self: center;
             }
 
-            i+span {
+            i + span {
                 font-weight: 500;
             }
         }
 
     }
 }
+
 @media (min-width: 1024px) {
-    
+
 
     .footer__container {
         height: 54px;
