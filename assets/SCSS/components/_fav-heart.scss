@@ -25,9 +25,8 @@
   .full-heart {
     opacity: 0;
     background: linear-gradient(to top, $primary-color, $secondary-color);
-    -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 
   &:hover {
