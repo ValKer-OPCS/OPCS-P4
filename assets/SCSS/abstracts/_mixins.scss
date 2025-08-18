@@ -1,5 +1,5 @@
 @use "sass:color";
-@use 'colors' as *;
+@use 'variables' as *;
 
 @mixin dark-green-card {
     color: color.adjust($tertiary-color, $lightness: -47.8431372549%);
